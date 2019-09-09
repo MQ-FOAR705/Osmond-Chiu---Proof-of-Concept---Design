@@ -1,0 +1,292 @@
+
+\documentclass{article}
+ \usepackage{graphicx}
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
+\title{Proof of Concept}
+\author{Osmond Chiu}
+
+\begin{document}
+\maketitle
+
+Based on the results of my elaboration, my Proof of Concept will focus on the use of tools to improve the organisation of data and referencing for my thesis. The tools used will be Open Semantic Search, Zotero and Hypothes.is.
+
+\section*{Data Organisation}
+\subsection*{User Story}
+\subsubsection*{Index}
+
+As a student, I want my software to index my folder of documents, so that I can automatically organise my documents to help me find key topics within documents without needing to open them all.
+
+\subsubsection*{Text Search}
+
+As a student, I want my software to search for keywords within documents, so that I can easily find key points and sentences within documents without needing to open them all.
+
+\subsubsection*{Create tags}
+
+As an MRes student, I want my software to create tags, so that I can tag documents by topic to group them together.
+
+\subsubsection*{Tag Documents}
+
+As an MRes student, I want my software to tags documents, so that I can easily find documents on related topics.
+
+\subsubsection*{Highlights}
+
+As an MRes student, I want my software to enable me to highlighted lines in online documents, so that I can easily find key lines I previously identified.
+
+\subsubsection*{Annotations}
+
+As an MRes student, I want my software to enable me to add annotated notes in online documents, so that I can easily find notes about key passages I previously identified.
+
+\subsubsection*{Import Annotation}
+As an MRes student, I want my software to enable me to import my online annotations, so that I can keep my offline and online annotations in a single place
+
+\subsection*{Acceptance Criteria}
+
+\subsubsection*{Index}
+
+As an MRes student, I should be able to:
+\begin{enumerate}
+\item Open VirtualBox
+\item Select Settings then Shared Folder
+\item Select Folder Path and Folder Name of folder with documents I want to index
+\item Click start to load Open Semantic Desktop Search
+\item Cause the program to index documents and folders and auto generate basic categories.
+\end{enumerate}
+
+\subsubsection*{Text Search}
+
+As an MRes student, I should be able to
+\begin{enumerate}
+\item Open VirtualBox
+\item Click start to load Open Semantic Desktop Search
+\item Enter in the keywords to search for.
+\item Cause the program to search for the keywords in the documents.
+\item Cause the program to generate a list of the documents with the selected keywords and its location
+\end{enumerate}
+
+\subsubsection*{Create Tags}
+
+As an MRes student, I should be able to:
+\begin{enumerate}
+\item Open VirtualBox
+\item Click start to load Open Semantic Desktop Search
+\item Click Manage Structure
+\item Click Add new entry
+\item Enter tag name in label or name and leave facet blank
+\item Click save
+\end{enumerate}
+
+\subsubsection*{Tag documents}
+
+As an MRes student, I should be able to:
+\begin{enumerate}
+\item Open VirtualBox
+\item Click start to load Open Semantic Desktop Search
+\item Search for document.
+\item Click Tagging and annotation under Document
+\item Select tags
+\item Click Save
+\end{enumerate}
+
+\subsubsection*{Highlights}
+
+As an MRes student, I should be able to: \begin{enumerate}
+\item Enter in the URL for a website.
+\item Click on the Hypothes.is browser toolbox if inactive to sync with account
+\item Identify text in open document
+\item Highlight the selected text. 
+\item Click on an icon to confirm the highlight.
+\end{enumerate}
+
+\subsubsection*{Annotation}
+
+As an MRes student, I should be able to:
+\begin{enumerate}
+\item Enter in the URL for a website. 
+\item Click on the Hypothes.is browser toolbox if inactive to sync with account
+\item Select the relevant text. 
+\item Click on an icon to confirm an annotation will be created
+\item Create an annotation the selected text.
+\item Write the annotation for the selected text.
+\item Tag the annotations. 
+\item Choose the privacy setting of the annotation
+\item Save the annotation. 
+\end{enumerate}
+
+\subsubsection*{Import annotations}
+As an MRes student, I should be able to:
+\begin{enumerate}
+\item Log in to my Hypothes.is account.
+\item Click on Settings icon then select Developer
+\item Generate an API token
+\item Open VirtualBox
+\item Start OpenSemantic Search
+\item Go to datasources
+\item Select Hypothes.is
+\item Enter API token
+\item Import saved Hypothes.is annotations
+\end{enumerate}
+
+\subsection*{Prerequisites}
+
+The indexation of documents must be completed for the data organisation component of the proof of concept to work. Without indexation, tagging cannot occur. Text searching will improve it but is not necessary.
+
+Annotations must be done for the import of annotations to occur. Additional annotations can always substitute for highlighted lines.
+
+\subsubsection*{Index}
+
+Before I can index, I will need to:\begin{itemize}
+\item know where the documents I wish to index are located
+\item install VirtualBox
+\item install OpenSemantic Search
+\item what information from the documents will be indexed
+\end{itemize}
+
+\subsubsection*{Text Search}
+Before I can do text search, I will need to:\begin{itemize}
+\item install VirtualBox
+\item install OpenSemantic Search
+\item index documents
+\end{itemize}
+
+\subsubsection*{Create Tags}
+
+Before I create tags, I will need to:
+\begin{itemize}
+\item install VirtualBox
+\item install OpenSemantic Search
+\item index documents
+\item determine what the tags are or a framework for tag naming
+\end{itemize}
+
+\subsubsection*{Tag documents}
+
+Before I tag documents, I will need to:
+\begin{itemize}
+\item install VirtualBox
+\item install OpenSemantic Search
+\item index documents
+\item create tags
+\end{itemize}
+
+\subsubsection*{Highlights}
+
+Before I can highlight text, I will:
+\begin{itemize}
+\item need a Hypothes.is account established
+\item need a Hypothes.is browser toolbar installed
+\end{itemize}
+
+\subsubsection*{Annotations}
+
+Before I can insert annotations, I will:
+\begin{itemize}
+\item need a Hypothes.is account established
+\item need a Hypothes.is browser toolbar installed
+\item need tags or a framework for tag naming
+\end{itemize}
+
+\subsubsection*{Import Annotations}
+
+Before I can import annotations, I will, 
+\begin{itemize}
+\item need a Hypothes.is account established
+\item need VirtualBox installed
+\item need OpenSemantic Search installed
+\item have annotations
+\end{itemize}
+
+\section*{Referencing}
+
+\subsection*{User Story}
+
+\subsubsection*{Import References}
+
+As an MRes student, I want my bibliography software to import my references, so that I don’t have to manually enter all the references for my bibliography.
+
+\subsubsection*{Insert References}
+
+As an MRes student, I want my bibliography software to insert my references, so that I don’t have to manually enter all the citations and do not need to check it meets the correct reference style.
+
+\subsubsection*{Generate Bibliography}
+
+As an MRes student, I want my bibliography software to generate my bibliography, so that I don’t have to double check my references against my bibliography’
+
+\subsection*{Acceptance Criteria}
+
+\subsubsection*{Import References}
+
+As an MRes student, I should be able to:
+\begin{enumerate} 
+\item Search for information about the source I am using the Macquarie Library website. 
+\item Download the reference data in a Bibtex format for the source from the library website. 
+\item Open the bibliography software Zotero. 
+\item Choose Import then select the Bibtex file with reference data. 
+\item Move the reference to the correct collection under My Library or create a new collection to move it to
+\item Check information and make any corrections to the imported reference in Info.
+\end{enumerate} 
+
+\subsubsection*{Insert references}
+
+As an MRes student, I should be able to: 
+\begin{enumerate} 
+\item Link the Zotero bibliography software to the typesetting or word processing program
+\item supply a bibliography database to the program. 
+\item Choose the citation style.
+\item Select the relevant source to cite
+\item Cause the program to generate the correct in-text citation based on the chosen source and style.
+\end{enumerate} 
+
+\subsubsection*{Generate bibliography}
+\begin{enumerate} 
+\item Ensure the Zotero bibliography software is linked to the typesetting or word processing program
+\item Choose the referencing style for the bibliography.
+\item Double check that the references have no typos
+\item Go to where the bibliography will be in the document
+\item Cause the program to generate the bibliography in that location
+\end{enumerate} 
+
+
+\subsection*{Prerequisites}
+
+The inserting of references and the generating of the bibliography must be completed for the referencing component of the proof of concept to work. The importation of references will improve it but is not necessary.
+
+\subsubsection*{Import References}
+
+Before references can be imported:
+\begin{itemize}
+    \item Zotero bibliography software will need to be chosen and installed
+    \item basic information about sources used will be needed to enable searches for Bibtex files.
+    \item Library websites will need to be searched to find relevant Bibtex files
+\end{itemize}
+
+\subsubsection*{Insert references}
+
+Before references can be inserted:
+\begin{itemize}
+    \item Zotero bibliography software will need to be installed
+    \item Zotero bibliography software will need to be integrated with the software used for writing
+    \item references will need to be imported into the Zotero bibliography software
+    \item references will need to be checked for typos and corrected
+    \item the referencing for the document will need to be known
+\end{itemize}
+
+\subsubsection*{Generate Bibliography}
+
+Before a bibliography can be generated:
+\begin{itemize}
+    \item Zotero bibliography software will need to be installed
+    \item Zotero bibliography software will need to be integrated with the software used for writing
+    \item references will need to be imported into the Zotero bibliography software
+    \item references will need to be checked for typos and corrected
+    \item the referencing for the document will need to be known
+\end{itemize}
+
+\end{document}
+
+
+
+
+
+
+
